@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='modal'>
+    <nav>
+        <h2>Library</h2>
+        <div>
+            <button class="open-form">Add Book</button>
+            <button class="sign in">Sign in</button>
+        </div>
+    </nav>
+    <section>
+        <table class='table'>
+            <thead class='table-head'>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Release Date</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+             </thead>
+            
+        </table>
+        <aside>
+            <h2>Stats</h2>
+            <ul>
+                <li>Books in library: <span class='library-count'></span></li>
+                <li>Books read: <span class='read-count'></span></li>
+                <li>Books not read: <span class='non-read-count'></span></li>
+            </ul>
+        </aside>
+    </section>
+</div>
+    <form action="#" class='form hidden'>
+        <h2>Add Book</h2>
+        <input type="text"  placeholder='Title' name='title' required="">
+        <input type="text"  placeholder='Author' name='author' required="">
+        <input type="text"  placeholder='Release Date' name='release'>
+        <input type="number"  placeholder='pages' name='pages' required="">
+        <div class='checkbox' style='display:flex;'>
+            <p>Read?</p>
+            <input type="checkbox" name="checkbox" id="" >
+        </div>
+        <button type="submit" class='add'>Add To Library</button>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
